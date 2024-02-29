@@ -18,3 +18,10 @@ jobs:
             7z zlib fmt gtest libbsarch libloot openssl libffi bzip2 python lz4 spdlog
             boost boost-di sip pyqt pybind11 ss licenses explorerpp usvfs
           mo2-dependencies: cmake_common uibase githubpp bsatk esptk archive lootcli game_gamebryo
+      - name: Upload Artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v3
+        with:
+          path: |
+            "D:\a\modorganizer\modorganizer\build\modorganizer_super\modorganizer\vsbuild\src\RelWithDebInfo\ModOrganizer.exe"
+          name: openmw-mo2
