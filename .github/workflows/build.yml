@@ -18,6 +18,9 @@ jobs:
             7z zlib fmt gtest libbsarch libloot openssl libffi bzip2 python lz4 spdlog
             boost boost-di sip pyqt pybind11 ss licenses explorerpp usvfs
           mo2-dependencies: cmake_common uibase githubpp bsatk esptk archive lootcli game_gamebryo
+      - name: Find the damn thing
+        run: |
+          ls -R
       - name: Upload Artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
