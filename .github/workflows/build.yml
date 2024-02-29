@@ -21,7 +21,6 @@ jobs:
       - name: Find the damn thing
         run: |
           mv build/modorganizer_super/modorganizer/vsbuild/src/RelWithDebInfo/ModOrganizer.exe .
-          pwd
           ls .
       - name: Upload Artifact
         if: github.event_name != 'pull_request'
