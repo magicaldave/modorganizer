@@ -1381,6 +1381,8 @@ void OrganizerCore::updateModsActiveState(const QList<unsigned int>& modIndices,
       }
     }
 
+    // Add workflow dispatch you fucks
+
     QStringList omwscripts =
         dir.entryList(QStringList() << "*.omwscripts", QDir::Files);
     for (const QString& omwscript : omwscripts) {
