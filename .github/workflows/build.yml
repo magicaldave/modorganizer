@@ -19,7 +19,7 @@ jobs:
             boost boost-di sip pyqt pybind11 ss licenses explorerpp usvfs
           mo2-dependencies: cmake_common uibase githubpp bsatk esptk archive lootcli game_gamebryo
       - name: Upload Artifact
-        if: github.event_name == 'pull_request'
+        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
         with:
           path: |
