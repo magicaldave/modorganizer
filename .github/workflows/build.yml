@@ -22,6 +22,7 @@ jobs:
         run: |
           pwd
           ls -R
+          mv build/modorganizer_super/modorganizer/vsbuild/src/RelWithDebInfo/ModOrganizer.exe .
       - name: Upload Artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
