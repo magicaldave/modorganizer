@@ -20,6 +20,7 @@ jobs:
           mo2-dependencies: cmake_common uibase githubpp bsatk esptk archive lootcli game_gamebryo
       - name: Find the damn thing
         run: |
+          pwd
           ls -R
       - name: Upload Artifact
         if: github.event_name != 'pull_request'
