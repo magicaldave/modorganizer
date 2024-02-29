@@ -1933,8 +1933,7 @@ void MainWindow::updateBSAList(const QStringList& defaultArchives,
                fileName.endsWith(".esl", Qt::CaseInsensitive) ||
                fileName.endsWith(".omwgame", Qt::CaseInsensitive) ||
                fileName.endsWith(".omwaddon", Qt::CaseInsensitive) ||
-               fileName.endsWith(".omwscripts", Qt::CaseInsensitive) ||
-            ;
+               fileName.endsWith(".omwscripts", Qt::CaseInsensitive);
       });
 
   auto hasAssociatedPlugin = [&](const QString& bsaName) -> bool {
