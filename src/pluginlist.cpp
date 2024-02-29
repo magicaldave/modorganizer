@@ -134,7 +134,10 @@ void PluginList::highlightPlugins(const std::vector<unsigned int>& modIndices,
       QDir dir(selectedMod->absolutePath());
       QStringList plugins = dir.entryList(QStringList() << "*.esp"
                                                         << "*.esm"
-                                                        << "*.esl");
+                                                        << "*.esl"
+                                                        << "*.omwgame"
+                                                        << "*.omwaddon"
+                                                        << "*.omwscripts");
       const MOShared::FilesOrigin& origin =
           directoryEntry.getOriginByName(selectedMod->internalName().toStdWString());
       if (plugins.size() > 0) {
