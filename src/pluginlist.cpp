@@ -199,7 +199,10 @@ void PluginList::refresh(const QString& profileName,
 
     if (filename.endsWith(".esp", Qt::CaseInsensitive) ||
         filename.endsWith(".esm", Qt::CaseInsensitive) ||
-        filename.endsWith(".esl", Qt::CaseInsensitive)) {
+        filename.endsWith(".esl", Qt::CaseInsensitive) ||
+        filename.endsWith(".omwaddon", Qt::CaseInsensitive) ||
+        filename.endsWith(".omwgame", Qt::CaseInsensitive) ||
+        filename.endsWith(".omwscripts", Qt::CaseInsensitive)) {
 
       availablePlugins.append(filename);
 
