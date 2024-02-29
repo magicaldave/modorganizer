@@ -23,5 +23,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           path: |
-            "D:\a\modorganizer\modorganizer\build\modorganizer_super\modorganizer\vsbuild\src\RelWithDebInfo\ModOrganizer.exe"
+            "D:/a/modorganizer/modorganizer/build/modorganizer_super/modorganizer/vsbuild/src/RelWithDebInfo/ModOrganizer.exe"
           name: openmw-mo2
